@@ -33,7 +33,7 @@
 ## Запуск
 
 ```bash
-git clone <repo>
+git clone https://github.com/Laninpusya/laravel-healthcheck-api
 cd laravel-healthcheck-api
 docker compose up -d
 ```
@@ -58,7 +58,7 @@ curl --request GET \
   --header "X-Owner: 123e4567-e89b-12d3-a456-426614174000"
 ```
 
-## Подключение через TablePlus
+## Подключение через GUI
 
 - Host: `127.0.0.1`
 - Port: `13306`
@@ -67,11 +67,6 @@ curl --request GET \
 - Database: `healthcheck`
 - SSL: `off`
 
-Если на другом устройстве порт `13306` окажется занят, можно переопределить его перед запуском:
-
-```bash
-MYSQL_FORWARD_PORT=23306 docker compose up -d
-```
 
 ## Структура решения
 
